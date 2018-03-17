@@ -1,0 +1,20 @@
+class {
+	handleClick(event) {
+		var emphasize = (str) => '***' + str + '***';
+		console.log(emphasize('handleClick'), event);
+	}
+}
+
+style {
+	.basic-button {
+		color: black;
+		background-color: blue;
+	}
+
+	.basic-button:hover {
+		background-color: blue;
+		color: white;
+	}
+}
+
+<button class="basic-button" onClick("handleClick")>${input.label}</button>

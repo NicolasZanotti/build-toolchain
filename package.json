@@ -1,0 +1,40 @@
+{
+ "name": "build-chain",
+ "version": "1.0.0",
+ "description": "Gulp tasks for a streamlined development workflow with Webpack, Marko, Babel and Sass.",
+ "author": "Nicolas Zanotti",
+ "main": "index.html",
+ "scripts": {
+  "build": "gulp",
+  "watch": "gulp watch",
+  "webpack": "webpack --config=build/configuration/webpack.js"
+ },
+ "license": "MIT",
+ "dependencies": {
+ },
+ "homepage": "https://github.com/NicolasZanotti/build-toolchain",
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/NicolasZanotti/build-toolchain.git"
+ },
+ "devDependencies": {
+  "@babel/core": "^7.0.0-beta.40",
+  "@babel/preset-env": "^7.0.0-beta.40",
+  "babel-loader": "^8.0.0-beta.2",
+  "css-loader": "0.28.11",
+  "del": "3.0.0",
+  "extract-text-webpack-plugin": "3.0.2",
+  "fancylog": "3.1.1",
+  "glob": "7.1.2",
+  "gulp": "3.9.1",
+  "gulp-flatten": "0.4.0",
+  "gulp-notify": "3.2.0",
+  "marko": "4.9.2",
+  "marko-loader": "1.3.2",
+  "sass": "^1.0.0-beta.5.3",
+  "through2": "2.0.3",
+  "uglifyjs-webpack-plugin": "1.2.4",
+  "webpack": "<4",
+  "webpack-stream": "4.0.2"
+ }
+}

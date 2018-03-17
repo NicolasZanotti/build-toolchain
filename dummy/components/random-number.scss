@@ -1,0 +1,6 @@
+// This will get passed in as a setting to the Sass compiler. @see build/tasks/build-styles.js
+$color: "blue" !default;
+
+.random {
+	color: #{$color};
+}
