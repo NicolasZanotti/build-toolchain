@@ -6,7 +6,8 @@ const state = require('../state');
 
 const watchOptions = {
 	cwd: globs.FOLDER_SRC,
-	debounceDelay: 2000
+	debounceDelay: 2000,
+	// This doesn't work with watch… `ignore: [globs.FILES_MARKO_FILES_COMPILED]`
 };
 
 function onChange(event) {
@@ -30,7 +31,7 @@ module.exports = function watchTask(gulp, done, styleTasks, scriptTasks) {
 		.on('unlink', onUnlink);
 
 	gulp
-		.watch(globs.FILES_SCRIPTS, watchOptions, scriptTasks)
+		.watch([globs.FILES_SCRIPTS, `!${globs.FILES_MARKO_FILES_COMPILED}`], watchOptions, scriptTasks)
 		.on('change', onChange)
 		.on('unlink', onUnlink);
 

@@ -2,13 +2,22 @@
 
 [Gulp](https://gulpjs.com/) tasks for a streamlined development workflow with [Webpack](https://webpack.js.org/), [Marko](https://markojs.com/), [Babel](https://babeljs.io/) and [Sass](https://sass-lang.com/).
 
-Run `npm install` and `npm run build` then open `index.html` in your browser.
+Run `npm install` and `npm run build`.
+
+This repo also includes a `dummy` folder with some examples for compilation.
 
 ## Features
 
-0. Parsing of file entry points based on their name. Like the Sass convention, files with a preceding underscore are skipped unless they get required.
-0. Transpilation of files ending in `es6` and `marko` from EcamaScript 6 to EcamaScript 5.
-0. Compression of all JavaScripts using UglifyJs.
+* Compiling Marko templates.
+* Compiling Sass stylesheets.
+* Transpiling ES6 code.
+* Watching for file changes and recompiling.
+* Running and refreshing the Node server during development.
+* Parsing of Webpack entry points based on their filename ❧.
+* Minification of assets for production.
+
+
+❧ like the Sass convention, files with a preceding underscore '_*.*' are skipped unless they get required
 
 ## Development
 
@@ -32,9 +41,9 @@ By default, Gulp will build all assets and then exit.
 
 ## Todo
 
-* Dynamically search for entry-points.
-* Refresh Node when watching for file changes.
 * Pass in default Sass format to (not scss) Sass compiler.
+* Update to Gulp 4
+* Watch for Git changes and reboot.
 * Optionally create source-maps during development.
 * Update to Webpack 4 once [marko-loader](https://github.com/marko-js/marko-loader/releases) has been updated.
 * Move Sass handling into Webpack once there is a Sass loader that supports [Dart Sass](https://github.com/sass/dart-sass).

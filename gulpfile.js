@@ -1,9 +1,14 @@
 const gulp = require('gulp');
+const state = require('./build/state');
 
 gulp
 	.task(
 		'default',
 		['info', 'clean', 'build:scripts', 'build:styles']
+	)
+	.task(
+		'server',
+		done => require('./build/tasks/server')(gulp, done)
 	)
 	.task(
 		'info',
@@ -25,6 +30,10 @@ gulp
 	)
 	.task(
 		'watch',
-		['clean', 'build:scripts', 'build:styles'],
-		done => require('./build/tasks/watch')(gulp, done, ['build:styles'], ['build:scripts'])
+		['clean', 'build:scripts', 'build:styles', 'server'],
+		done => require('./build/tasks/watch')(gulp, done, ['build:styles'], ['build:scripts', 'server'])
 	);
+
+process.on('exit', () => {
+	if (state.nodeProcess) state.nodeProcess.kill();
+});

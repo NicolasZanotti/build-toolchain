@@ -15,6 +15,8 @@ module.exports = {
 	FOLDER_PAGES: './dummy/pages/',
 	FOLDER_DIST: './dist/',
 
+	FILE_SERVER_ENTRY: './dummy/index.js',
+
 	// All the output file types.
 	FILES_COMPILED: '**/*.{js,css}',
 
