@@ -41,9 +41,8 @@ By default, Gulp will build all assets and then exit.
 
 ## Todo
 
-* Pass in default Sass format to (not scss) Sass compiler.
-* Update to Gulp 4
-* Watch for Git changes and reboot.
+* Pass in default Sass format (not SCSS) to Sass compiler.
+* Watch for Git changes while watching and restart.
 * Optionally create source-maps during development.
 * Update to Webpack 4 once [marko-loader](https://github.com/marko-js/marko-loader/releases) has been updated.
 * Move Sass handling into Webpack once there is a Sass loader that supports [Dart Sass](https://github.com/sass/dart-sass).
