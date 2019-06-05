@@ -23,7 +23,7 @@ This repo also includes a `dummy` folder with some examples for compilation.
 
 The Gulp tasks default to production mode. In order to enable development features, pass 'development' as the Node environment:
 
-	NODE_ENV=development gulp
+	NODE_ENV=development npx gulp
 
 ## Commands
 
