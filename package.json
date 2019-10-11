@@ -1,6 +1,6 @@
 {
  "name": "build-chain",
- "version": "1.0.1",
+ "version": "1.0.2",
  "description": "Gulp tasks for a streamlined development workflow with Webpack, Marko, Babel and Sass.",
  "author": "Nicolas Zanotti",
  "main": "index.html",
@@ -37,7 +37,7 @@
   "sass": "1.20.3",
   "through2": "2.0.3",
   "uglifyjs-webpack-plugin": "1.2.4",
-  "webpack": "<4",
+  "webpack": "4",
   "webpack-stream": "4.0.2"
  }
 }
