@@ -5,9 +5,8 @@
  "author": "Nicolas Zanotti",
  "main": "index.html",
  "scripts": {
-  "start": "node index.js",
-  "build": "gulp",
-  "watch": "gulp watch",
+  "build": "npx gulp",
+  "watch": "npx gulp watch",
   "webpack": "webpack --config=build/configuration/webpack.js"
  },
  "homepage": "https://github.com/NicolasZanotti/build-toolchain",
@@ -18,26 +17,5 @@
  "license": "MIT",
  "engines": {
   "node": ">=8"
- },
- "devDependencies": {
-  "@babel/core": "7.4.5",
-  "@babel/preset-env": "7.4.5",
-  "babel-loader": "8.0.6",
-  "css-loader": "1.0.1",
-  "del": "3.0.0",
-  "extract-text-webpack-plugin": "3.0.2",
-  "fancylog": "3.1.1",
-  "glob": "7.1.4",
-  "gulp": "4.0.2",
-  "gulp-flatten": "0.4.0",
-  "gulp-notify": "3.2.0",
-  "js-yaml": "3.13.1",
-  "marko": "4.17.3",
-  "marko-loader": "1.5.0",
-  "sass": "1.20.3",
-  "through2": "2.0.3",
-  "uglifyjs-webpack-plugin": "1.2.4",
-  "webpack": "4",
-  "webpack-stream": "4.0.2"
  }
 }
